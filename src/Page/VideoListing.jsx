@@ -1,7 +1,7 @@
-import { CategoryCard } from "../Component/Category-card";
 import { RightNav } from "../Component/Right-nav";
-import "./Explore.css";
-export const Home = () => {
+import { VideolistingCard } from "../Component/Videolisting-card";
+
+export const VideoListing = () => {
   return (
     <div className="explore-block">
       <div className="left-nav">
@@ -9,7 +9,7 @@ export const Home = () => {
       </div>
 
       <div className="explore-contianer">
-        <CategoryCard />
+        <VideolistingCard />
       </div>
     </div>
   );

@@ -1,0 +1,85 @@
+:root {
+  --twitter-color: #50b7f5;
+  --twitter-background: #e6ecf0;
+}
+
+.sidebarOption {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  cursor: pointer;
+  margin: 10px;
+  gap: 25px;
+  font-size: 20px;
+}
+.sidebarOption {
+  padding: 20px;
+}
+.sidebarOption h2 {
+  font-weight: 800;
+  font-size: 20px;
+  margin-right: 20px;
+}
+.sidebarOption:hover {
+  background-color: var(--twitter-background);
+  border-radius: 30px;
+  color: var(--twitter-color);
+  transition: color 100ms ease-out;
+}
+.sidebar_tweet {
+  width: 100%;
+  background-color: var(--twitter-color);
+  border: none;
+  color: white;
+  font-weight: 900;
+  border-radius: 30px;
+  height: 50px;
+  margin-top: 20px;
+}
+.nav-link {
+  outline: none;
+  color: black;
+  text-decoration: none;
+}
+.sidebar {
+  height: 95vh;
+
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+}
+.fa-twitter {
+  color: var(--twitter-color);
+  font-size: 30px;
+}
+
+.leftside-profile {
+  display: flex;
+  flex-direction: row;
+  justify-self: flex-end;
+  align-items: flex-start;
+  width: 100%;
+}
+.Rightside_avatar img {
+  border-radius: 50%;
+  height: 40px;
+}
+.rightside_headerText h3 {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.proflie:hover {
+  background-color: rgb(174, 172, 172);
+  border: 2px solid var(--twitter-color);
+  border-radius: 30px;
+}
+.active {
+  color: var(--twitter-color);
+}

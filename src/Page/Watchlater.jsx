@@ -1,7 +1,8 @@
-import { CategoryCard } from "../Component/Category-card";
 import { RightNav } from "../Component/Right-nav";
+import { WatchLaterCard } from "../Component/WatchlaterCard";
+
 import "./Explore.css";
-export const Home = () => {
+export const Watchlater = () => {
   return (
     <div className="explore-block">
       <div className="left-nav">
@@ -9,7 +10,7 @@ export const Home = () => {
       </div>
 
       <div className="explore-contianer">
-        <CategoryCard />
+        <WatchLaterCard />
       </div>
     </div>
   );

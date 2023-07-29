@@ -1,0 +1,18 @@
+.explore-contianer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 15px;
+  padding: 5px;
+  width: 1290px;
+}
+.left-nav {
+  width: 300px;
+}
+.explore-block {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 15px;
+  padding: 5px;
+}

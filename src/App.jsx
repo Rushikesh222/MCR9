@@ -4,6 +4,7 @@ import { Home } from "./Page/Home";
 import { VideoListing } from "./Page/VideoListing";
 import { Explore } from "./Page/Explore";
 import { Watchlater } from "./Page/Watchlater";
+import { SingleVideo } from "./Page/Singlevideo";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/videolisting/:categoryname" element={<VideoListing />} />
+        <Route path="/singlevideo/:userId" element={<SingleVideo />} />
         <Route path="/explore" element={<Explore />} />
         <Route path="/watchlater" element={<Watchlater />} />
       </Routes>

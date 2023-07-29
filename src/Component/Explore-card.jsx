@@ -1,17 +1,32 @@
+import { useNavigate } from "react-router-dom";
 import { useData } from "../context/CardContext";
 import { isItemPresentInWishlist } from "../until/ispresentInWishlist";
 import "./Videocard.css";
 
 export const ExploreCard = () => {
   const { state, dispatch } = useData();
+  const navigate = useNavigate();
   return (
     <div className="explore-card">
+      <div className="search-box">
+        <input
+          type="text"
+          placeholder="Search Video By Title"
+          onChange={(e) => {
+            dispatch({ type: "SEARCH-TITLE", payload: e.target.value });
+          }}
+        />
+      </div>
       <div className="video-container">
-        {state?.VideoData?.map((items) => {
+        {state?.search?.map((items) => {
           const { _id, title, thumbnail, avatar, category, creator, views } =
             items;
           return (
-            <div key={_id} className="video-card">
+            <div
+              key={_id}
+              className="video-card"
+              onClick={() => navigate(`/singlevideo/${_id}`)}
+            >
               <div className="image-card">
                 <img className="video-image" src={thumbnail} />
                 <div className="clock-icon">

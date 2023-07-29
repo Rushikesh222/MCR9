@@ -24,7 +24,7 @@ export const CardProvider = ({ children }) => {
       localStorage.setItem("video", JSON.stringify(videos));
       dispatch({ type: "SET_VIDEO", payload: videos });
     }
-  }, []);
+  }, [videos]);
   return (
     <CardContext.Provider value={{ state, dispatch }}>
       {children}

@@ -1,6 +1,7 @@
 export const initialState = {
   VideoData: [],
   AddPlaylist: [],
+  search: [],
 };
 export const videoReducer = (state, { type, payload }) => {
   switch (type) {
@@ -8,6 +9,16 @@ export const videoReducer = (state, { type, payload }) => {
       return { ...state, VideoData: payload };
     case "SET_PLAYLIST":
       return { ...state, AddPlaylist: payload };
+    case "SEARCH-TITLE":
+      const Searchlist =
+        payload === ""
+          ? state?.VideoData
+          : state?.VideoData?.filter((items) =>
+              items.title.toLowerCase().includes(payload.toLowerCase())
+            );
+
+      console.log(Searchlist);
+      return { ...state, search: Searchlist };
     case "REMOVE_PLAYLIST":
       const updatedPlaylist = state?.VideoData?.filter(
         (items) => items.id !== payload.id

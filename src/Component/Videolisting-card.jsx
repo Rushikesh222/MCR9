@@ -1,5 +1,5 @@
 import { useNavigate, useParams } from "react-router-dom";
-import { videos } from "../assets/videoData";
+import { videos } from "../assets/data";
 import "./Videocard.css";
 import { isItemPresentInWishlist } from "../until/ispresentInWishlist";
 import { useData } from "../context/CardContext";

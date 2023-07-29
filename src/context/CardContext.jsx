@@ -8,7 +8,7 @@ import {
 
 import { categories } from "../assets/Category";
 import { initialState, videoReducer } from "../Reducer/Reducer";
-import { videos } from "../assets/videoData";
+import { videos } from "../assets/data";
 
 export const CardContext = createContext();
 export const CardProvider = ({ children }) => {

@@ -7,8 +7,8 @@ import {
 } from "react";
 
 import { categories } from "../assets/Category";
-import { videos } from "../assets/videoData";
 import { initialState, videoReducer } from "../Reducer/Reducer";
+import { videos } from "../assets/videoData";
 
 export const CardContext = createContext();
 export const CardProvider = ({ children }) => {
